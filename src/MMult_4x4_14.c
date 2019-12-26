@@ -1,3 +1,4 @@
+{{{
 /* Create macros so that the matrices are stored in column-major order */
 
 #define A(i,j) a[ (j)*lda + (i) ]
@@ -172,3 +173,4 @@ void AddDot4x4( int k, double *a, int lda,  double *b, int ldb, double *c, int l
   C( 3, 0 ) += c_20_c_30_vreg.d[1];  C( 3, 1 ) += c_21_c_31_vreg.d[1];  
   C( 3, 2 ) += c_22_c_32_vreg.d[1];  C( 3, 3 ) += c_23_c_33_vreg.d[1]; 
 }
+}}}

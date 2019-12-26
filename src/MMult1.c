@@ -1,3 +1,4 @@
+{{{
 /* Create macros so that the matrices are stored in column-major order */
 
 #define A(i,j) a[ (j)*lda + (i) ]
@@ -42,3 +43,4 @@ void AddDot( int k, double *x, int incx,  double *y, double *gamma )
     *gamma += X( p ) * y[ p ];     
   }
 }
+}}}
